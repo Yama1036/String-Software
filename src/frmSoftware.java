@@ -28,8 +28,26 @@ public class frmSoftware extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        txtIn1 = new javax.swing.JTextField();
+        btn1 = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        txtIn2 = new javax.swing.JTextField();
+        btn2 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        txtIn3 = new javax.swing.JTextField();
+        btn3 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
+        txtIn4 = new javax.swing.JTextField();
+        btn4 = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        txtInS = new javax.swing.JTextField();
+        txtInL = new javax.swing.JTextField();
+        btn5 = new javax.swing.JButton();
+        lblOut1 = new javax.swing.JLabel();
+        lblOut2 = new javax.swing.JLabel();
+        lblOut3 = new javax.swing.JLabel();
+        lblOut4 = new javax.swing.JLabel();
+        lblOut5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,9 +56,74 @@ public class frmSoftware extends javax.swing.JFrame {
 
         jLabel2.setText("Enter a String. The program will outputs the number of characters in the String !!");
 
-        jTextField1.setText("jTextField1");
+        btn1.setText("Length →");
+        btn1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn1ActionPerformed(evt);
+            }
+        });
 
-        jButton1.setText("jButton1");
+        jLabel4.setText("Enter a String using \"lowercase\" letter. The program will output the String in all capital letters !!");
+
+        txtIn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIn2ActionPerformed(evt);
+            }
+        });
+
+        btn2.setText("All Caps →");
+        btn2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn2ActionPerformed(evt);
+            }
+        });
+
+        jLabel3.setText("Enter a String. The program will outout the character at the 4th spot !!");
+
+        txtIn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIn3ActionPerformed(evt);
+            }
+        });
+
+        btn3.setText("4th Spot →");
+        btn3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn3ActionPerformed(evt);
+            }
+        });
+
+        jLabel5.setText("Enter two String. The program will output whether or not they are identical.");
+
+        btn4.setText("Identical →");
+        btn4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn4ActionPerformed(evt);
+            }
+        });
+
+        jLabel6.setText("Enter a String and a letter. the program will output whether or not the letter is found in the String !!");
+
+        txtInS.setText("                - String -");
+        txtInS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtInSActionPerformed(evt);
+            }
+        });
+
+        txtInL.setText("- Letter -");
+
+        btn5.setText("Found ? →");
+
+        lblOut1.setText("...");
+
+        lblOut2.setText("...");
+
+        lblOut3.setText("...");
+
+        lblOut4.setText("...");
+
+        lblOut5.setText("...");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -49,18 +132,54 @@ public class frmSoftware extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(169, 169, 169)
+                        .addComponent(txtIn1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn1)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblOut1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel2)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(84, 84, 84)
+                                .addComponent(txtIn4, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btn4)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblOut4))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtIn2, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn2))
+                                    .addComponent(jLabel3)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtIn3, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(btn3)))
+                                .addGap(18, 18, 18)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblOut2)
+                                    .addComponent(lblOut3)))
+                            .addComponent(jLabel6)))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(267, 267, 267)
                         .addComponent(jLabel1))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton1))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addGap(76, 76, 76)
-                            .addComponent(jLabel2))))
-                .addContainerGap(234, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(106, 106, 106)
+                        .addComponent(txtInS, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtInL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn5)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblOut5)))
+                .addContainerGap(143, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -71,13 +190,71 @@ public class frmSoftware extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addContainerGap(236, Short.MAX_VALUE))
+                    .addComponent(btn1)
+                    .addComponent(txtIn1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblOut1))
+                .addGap(18, 18, 18)
+                .addComponent(jLabel4)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtIn2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn2)
+                    .addComponent(lblOut2))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel3)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtIn3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn3)
+                    .addComponent(lblOut3))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel5)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtIn4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn4)
+                    .addComponent(lblOut4))
+                .addGap(26, 26, 26)
+                .addComponent(jLabel6)
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtInS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtInL, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn5)
+                    .addComponent(lblOut5))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtIn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIn2ActionPerformed
+
+    private void txtIn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIn3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIn3ActionPerformed
+
+    private void txtInSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtInSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtInSActionPerformed
+
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn1ActionPerformed
+
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn2ActionPerformed
+
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn3ActionPerformed
+
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -115,9 +292,27 @@ public class frmSoftware extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JTextField jTextField1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel lblOut1;
+    private javax.swing.JLabel lblOut2;
+    private javax.swing.JLabel lblOut3;
+    private javax.swing.JLabel lblOut4;
+    private javax.swing.JLabel lblOut5;
+    private javax.swing.JTextField txtIn1;
+    private javax.swing.JTextField txtIn2;
+    private javax.swing.JTextField txtIn3;
+    private javax.swing.JTextField txtIn4;
+    private javax.swing.JTextField txtInL;
+    private javax.swing.JTextField txtInS;
     // End of variables declaration//GEN-END:variables
 }
